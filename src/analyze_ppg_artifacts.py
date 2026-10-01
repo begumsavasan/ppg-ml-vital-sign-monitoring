@@ -33,12 +33,12 @@ def _finite_or_zero(x: float) -> float:
     return float(x) if np.isfinite(x) else 0.0
 
 
-def bandpass(x: np.ndarray, fs: float, low: float = 0.75, high: float = 5.0) -> np.ndarray:
+def bandpass(x: np.ndarray, fs: float, low: float = 0.5, high: float = 3.0) -> np.ndarray:
     x = np.asarray(x, dtype=float)
     x = np.nan_to_num(x, nan=np.nanmedian(x) if np.isfinite(x).any() else 0.0)
     x = x - np.mean(x)
     nyq = fs / 2.0
-    b, a = butter(3, [low / nyq, high / nyq], btype="bandpass")
+    b, a = butter(4, [low / nyq, high / nyq], btype="bandpass")
     return filtfilt(b, a, x)
 
 

@@ -4,21 +4,33 @@
 
 DOI: https://doi.org/10.62476/bio.ph.12162
 
-## Current repository status
+## Dataset
 
-This GitHub repository is a public companion to the peer-reviewed study, not yet a complete data-and-code deposit.
+The feasibility analysis uses the open **Pulse Transit Time PPG Dataset v1.1.0** hosted by PhysioNet:
 
-No raw human-participant or potentially identifying data should be inferred to be publicly available from the existence of this repository.
+https://doi.org/10.13026/jpan-6n92
+
+The public dataset contains synchronized PPG and inertial channels from 22 healthy participants performing sitting, walking, and running activities. The published feasibility analysis used subjects s1–s3.
+
+Raw PhysioNet CSV files are **not redistributed in this repository**.
+
+## Repository contents
+
+The repository includes:
+
+- a public reimplementation of the Stage-1 artifact-classification workflow;
+- citation and provenance metadata;
+- an offline synthetic smoke-test mode for code-path verification.
+
+The synthetic mode is not participant data and is not intended to reproduce the paper's numerical results.
 
 ## Release criteria
 
-Before any study-specific data or code is added here, the following must be checked:
+Any additional study-specific material added later must pass:
 
-1. provenance of each file;
-2. participant privacy and de-identification;
-3. consent and ethics restrictions, where applicable;
-4. third-party licensing and redistribution rights;
-5. consistency between released code, reported methods, and published results;
+1. provenance verification;
+2. participant privacy and de-identification review;
+3. ethics/consent restrictions where applicable;
+4. third-party licensing and redistribution review;
+5. consistency checks against the published methods and results;
 6. removal of local paths, credentials, internal notes, and confidential material.
-
-Any synthetic or example data added later will be explicitly labelled and will not be presented as original participant measurements.

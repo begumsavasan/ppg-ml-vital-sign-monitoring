@@ -30,12 +30,13 @@ The peer-reviewed paper documents:
 - model: Random Forest
 - PPG-only features: standard deviation, skewness, kurtosis, SNR, spectral entropy, dominant frequency, peak count, amplitude range, HRV-RMSSD, HR estimate
 - added accelerometer features: magnitude mean, standard deviation, maximum, spectral entropy
+- PPG preprocessing: 4th-order Butterworth bandpass, 0.5–3.0 Hz
 
-The public script exposes preprocessing and model choices explicitly so that they can be audited rather than silently inferred.
+The paper does not preserve every implementation-level Random Forest hyperparameter or preprocessing choice used in the earlier private script. The public reimplementation therefore exposes its current defaults explicitly and does not claim exact numerical identity with the original run.
 
 ## Dataset
 
 Pulse Transit Time PPG Dataset v1.1.0, PhysioNet  
-https://physionet.org/content/pulse-transit-time-ppg/1.1.0/
+https://doi.org/10.13026/jpan-6n92
 
 Raw PhysioNet files are not included in this repository.

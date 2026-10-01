@@ -1,6 +1,6 @@
-# PPG + Machine Learning for Vital-Sign Monitoring
+# Fingernail-Mounted PPG + Machine Learning
 
-Public companion repository for peer-reviewed research on fingernail-mounted photoplethysmography (PPG) and machine-learning-assisted vital-sign monitoring.
+Public companion repository for peer-reviewed bioengineering research on fingernail-mounted photoplethysmography (PPG), physiological signal analysis, and machine-learning-assisted vital-sign monitoring.
 
 ## Publication
 
@@ -8,41 +8,42 @@ Public companion repository for peer-reviewed research on fingernail-mounted pho
 
 DOI: https://doi.org/10.62476/bio.ph.12162
 
-## Scope
+## Research scope
 
-This repository is intended to document the public-safe computational workflow associated with the study, including reproducible components of:
+The project sits at the intersection of:
 
-- PPG signal preprocessing
-- feature extraction
-- signal-quality and artifact handling
-- model-development workflow
-- model evaluation
-- figure generation
-- methodological documentation
+- biomedical sensing
+- photoplethysmography
+- physiological signal processing
+- feature-based analysis
+- machine learning
+- vital-sign monitoring
+- scientific visualization
+- reproducible bioengineering research
 
-## Reproducibility Policy
+## Current public release
 
-Only material suitable for public release will be included here.
+This repository currently provides the public project identity, citation metadata, and data-governance boundary.
 
-The repository will not contain:
+It should **not** yet be treated as a complete replication package. Publication-specific code, processed data, and figure-generation workflows will only be added after provenance, redistribution rights, and privacy checks are complete.
 
-- private or identifiable participant data
+See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+
+## Public-release policy
+
+This repository will not publish:
+
+- identifiable or private participant data
 - confidential laboratory records
-- unpublished sensitive source material
 - restricted third-party data
-- files whose redistribution rights are unclear
+- unpublished sensitive source material
+- files with unclear redistribution rights
 
-Where raw data cannot be shared, the repository may use synthetic, openly available, or structurally representative examples to document the workflow.
+Where raw data cannot be released, future reproducibility material may use de-identified, synthetic, openly licensed, or structurally representative examples, clearly labelled as such.
 
-## Repository Status
+## Citation
 
-**Public scaffold established.**
-
-Code, figures, documentation, and citation metadata will be added after provenance and redistribution checks are completed.
-
-## Research Context
-
-This project sits within a broader research program spanning biomedical sensing, physiological signal analysis, machine learning, and reproducible bioengineering research.
+See [CITATION.cff](CITATION.cff).
 
 ## Researcher
 
